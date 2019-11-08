@@ -2,7 +2,7 @@
 Author: David Cosby
 Date: 11/8/2019
 
-Creates and tests a rectangle class.
+Creates a rectangle class and tests it by constructing two different rectangles of different dimensions.
 */
 
 import java.awt.*;
