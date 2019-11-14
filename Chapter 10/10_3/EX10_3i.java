@@ -5,7 +5,7 @@ Date: 11/12/2019
 Tests each of the methods in the MyInteger class
 */
 
-class EX10_3i {
+public class EX10_3i {
 	public static void main(String[] args) {
 		MyInteger x = new MyInteger(53);
 		MyInteger z = new MyInteger(11);

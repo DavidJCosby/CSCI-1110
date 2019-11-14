@@ -5,7 +5,7 @@ Date: 11/12/2019
 Custom "MyInteger" class with various static and non-static methods.
 */
 
-class MyInteger {
+public class MyInteger {
 	public int value;
 	
 	MyInteger(int v) {
