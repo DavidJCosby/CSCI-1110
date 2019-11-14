@@ -2,36 +2,11 @@
 Author: David Cosby
 Date: 11/8/2019
 
-Creates a rectangle class and tests it by constructing two different rectangles of different dimensions.
+Tests the Rectangle class by constructing two different rectangles of different dimensions and reading off its area, perimeter, width, and height.
 */
 
-import java.awt.*;
 
-class Rectangle {
-	double width = 1;
-	double height = 1;
-	
-	public Rectangle() {
-		
-	}
-	
-	public Rectangle(double w, double h) {
-		height = h;
-		width = w;
-	}
-	
-	public double getArea() {
-		return width * height;
-	}
-	
-	public double getPerimeter() {
-		return (2 * width) + (2 * height);
-	}
-	
-}
-
-
-class EX9_1i {
+public class EX9_1i {
 	public static void main(String[] args) {
 		Rectangle r1 = new Rectangle(4, 40);
 		Rectangle r2 = new Rectangle(3.5, 35.9);
