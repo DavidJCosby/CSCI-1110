@@ -39,27 +39,27 @@ public class MyInteger {
 	}
 	
 	public static boolean isEven(MyInteger v) {
-		return MyInteger.isEven(v.getValue());
+		return isEven(v.getValue());
 	}
 		
 	public static boolean isOdd(MyInteger v) {
-		return MyInteger.isOdd(v.getValue());
+		return isOdd(v.getValue());
 	}
 		
 	public static boolean isPrime(MyInteger v) {
-		return MyInteger.isPrime(v.getValue());
+		return isPrime(v.getValue());
 	}
 	
 	public boolean isEven() {
-		return MyInteger.isEven(value);
+		return isEven(value);
 	}
 	
 	public boolean isOdd() {
-		return MyInteger.isOdd(value);
+		return isOdd(value);
 	}
 	
 	public boolean isPrime() {
-		return MyInteger.isPrime(value);
+		return isPrime(value);
 	}
 	
 	public boolean equals(int v) {
@@ -79,7 +79,7 @@ public class MyInteger {
 		for (char c : chars) {
 			s += c;
 		}
-		return MyInteger.parseInt(s);
+		return parseInt(s);
 	}
 	
 
