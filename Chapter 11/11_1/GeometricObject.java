@@ -1,3 +1,11 @@
+
+/*
+Author: David Cosby
+Date: 11/18/2001
+Geometric Object class with data properties "color", "filled", and "dateCreated". To be extended by Triangle.
+*/
+
+
 import java.util.Date;
 
 class GeometricObject {
