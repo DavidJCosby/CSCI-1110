@@ -16,7 +16,6 @@ class GeometricObject {
 	
 	public GeometricObject() {
 		dateCreated = new Date();
-		
 	}
 	
 	public GeometricObject(String c, boolean fill) {
