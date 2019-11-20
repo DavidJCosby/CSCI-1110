@@ -56,7 +56,7 @@ public class Account {
 	}
 	
 	public double getMonthlyInterest() {
-		return balance * Account.getMonthlyInterestRate();
+		return balance * getMonthlyInterestRate();
 	}
 	
 	public void withdraw(double amount) {
@@ -65,5 +65,14 @@ public class Account {
 	
 	public void deposit(double amount) {
 		balance += amount;
+	}
+	
+	public String toString() {
+		String output = "Account";
+		output += "\nDate created: " + dateCreated.toString();
+		output += "\nID: " + id;
+		output += "\nBalance: $" + balance;
+		output += "\nAnnual Interest Rate: " + annualInterestRate; 
+		return output;
 	}
 }
