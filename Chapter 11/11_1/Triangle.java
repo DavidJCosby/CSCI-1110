@@ -11,7 +11,7 @@ class Triangle extends GeometricObject {
 	private double side3 = 1.0;
 	
 	Triangle() {
-		
+		super();
 	}
 	
 	Triangle(double s1, double s2, double s3) {

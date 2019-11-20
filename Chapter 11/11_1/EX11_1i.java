@@ -12,16 +12,16 @@ class EX11_1i {
 		System.out.print("First side Length: ");
 		double s1 = input.nextDouble();
 		
-		System.out.print("\nSecond side Length: ");
+		System.out.print("Second side Length: ");
 		double s2 = input.nextDouble();
 		
-		System.out.print("\nThird side Length: ");
+		System.out.print("Third side Length: ");
 		double s3 = input.nextDouble();
 		
-		System.out.print("\nTriangle color: ");
+		System.out.print("Triangle color: ");
 		String color = input.next();
 		
-		System.out.print("\nFilled triangle? (true/false): ");
+		System.out.print("Filled triangle? (true/false): ");
 		boolean filled = input.nextBoolean();
 		
 		Triangle triangle = new Triangle(s1, s2, s3);
