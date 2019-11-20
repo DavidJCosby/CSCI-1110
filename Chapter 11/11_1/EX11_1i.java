@@ -1,3 +1,8 @@
+/*
+Author: David Cosby
+Date: 11/20/2001
+Uses user input to create a Triangle. Displays the triangle's Area, perimeter, color, and its filled status. */
+
 import java.util.Scanner;
 
 class EX11_1i {
@@ -26,7 +31,7 @@ class EX11_1i {
 		System.out.println("\n\nTriangle");
 		System.out.println("Area\t  : " + triangle.getArea());
 		System.out.println("Perimeter : " + triangle.getPerimeter());
-		System.out.println("color\t  : " + triangle.getColor());
+		System.out.println("Color\t  : " + triangle.getColor());
 		System.out.println("Filled \t  : " + triangle.isFilled());
 
 	}
