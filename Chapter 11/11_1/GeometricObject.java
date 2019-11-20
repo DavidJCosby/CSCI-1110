@@ -1,4 +1,3 @@
-
 /*
 Author: David Cosby
 Date: 11/18/2001

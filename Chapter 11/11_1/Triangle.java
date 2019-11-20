@@ -1,3 +1,10 @@
+
+/*
+Author: David Cosby
+Date: 11/18/2001
+Triangle class with side length properties and various methods. Extended from Geometric object, to be used by EX11_1i.
+*/
+
 class Triangle extends GeometricObject {
 	private double side1 = 1.0;
 	private double side2 = 1.0;
