@@ -22,10 +22,6 @@ class EX12_3i {
 		}
 	}
 	
-	public static int arrayValueAt(int index) throws ArrayIndexOutOfBoundsException {
-		return array[index];
-	}
-
 	public static void main(String[] args) {
 		populateArray();
 		boolean end = false;
@@ -35,7 +31,7 @@ class EX12_3i {
 			System.out.print("Enter an array index (0-99): ");
 			try {
 				int index = input.nextInt();
-				int selectedValue = arrayValueAt(index);
+				int selectedValue = array[index];
 				System.out.println("Array[" + index + "] = " + selectedValue);
 				end = true;
 			}
