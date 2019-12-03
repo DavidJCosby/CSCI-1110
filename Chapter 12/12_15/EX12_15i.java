@@ -11,13 +11,7 @@ import java.util.*;
 
 
 class EX12_15i {
-	
-	public static int randomInt(int floor, int ceil) {
-			double seed = Math.random();
-			return (int) (floor + (ceil-floor) * seed); // interpolation formula  a+(b-a)t
-		}
-		
-	
+
 	public static File createFileAndPopulateWithIntegers(String fileName) throws IOException {
 		File file = new File("Exercise12_15.txt");
 		
@@ -30,6 +24,12 @@ class EX12_15i {
 		}
 		
 		return file;
+	}
+	
+	
+	public static int randomInt(int floor, int ceil) {
+		double seed = Math.random();
+		return (int) (floor + (ceil-floor) * seed); // interpolation formula  a+(b-a)t
 	}
 	
 	
