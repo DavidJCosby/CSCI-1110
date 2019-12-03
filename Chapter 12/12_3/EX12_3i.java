@@ -1,6 +1,6 @@
 /*
 Author: David Cosby
-Date: 11/26/2001
+Date: 11/26/2019
 
 Creates an array with 100 random integers and allows the user to read it by inputting an index.
 */
