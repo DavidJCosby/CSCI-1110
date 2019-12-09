@@ -1,23 +1,23 @@
 /*
 Author: David Cosby
 Date: 12/9/2019
-Geometric Object class with data properties "color", "filled", and "dateCreated". To be extended by Triangle.
+Abstract Geometric Object class with data properties "color", "filled", and "dateCreated". To be extended by Triangle.
 */
 
 
 import java.util.Date;
 
-class GeometricObject {
+public abstract class GeometricObject {
 	private String color;
 	private boolean filled;
 	private Date dateCreated;
 	
 	
-	public GeometricObject() {
+	protected GeometricObject() {
 		dateCreated = new Date();
 	}
 	
-	public GeometricObject(String c, boolean fill) {
+	protected GeometricObject(String c, boolean fill) {
 		setColor(c);
 		setFilled(fill);
 	}
@@ -45,3 +45,7 @@ class GeometricObject {
 	public String toString() {
 		return "created on " + dateCreated + "\ncolor: " + color + " and filled: " + filled;
 	}
+	
+	public abstract double getArea();
+	
+	public abstract double getPerimeter();
