@@ -1,7 +1,7 @@
 
 /*
 Author: David Cosby
-Date: 11/20/2001
+Date: 11/20/2019
 Triangle class with side length properties and various methods. Extended from Geometric object, to be used by EX11_1i.
 */
 

@@ -1,6 +1,6 @@
 /*
 Author: David Cosby
-Date: 11/20/2001
+Date: 11/20/2019
 Uses user input to create a Triangle. Displays the triangle's Area, perimeter, color, and its filled status. */
 
 import java.util.Scanner;

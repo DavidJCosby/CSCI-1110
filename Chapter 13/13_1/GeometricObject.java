@@ -1,6 +1,6 @@
 /*
 Author: David Cosby
-Date: 11/18/2019
+Date: 12/9/2019
 Geometric Object class with data properties "color", "filled", and "dateCreated". To be extended by Triangle.
 */
 
@@ -45,4 +45,3 @@ class GeometricObject {
 	public String toString() {
 		return "created on " + dateCreated + "\ncolor: " + color + " and filled: " + filled;
 	}
-}
