@@ -42,14 +42,15 @@ class Octogon extends GeometricObject implements Cloneable, Comparable<Geometric
 	}
 	
 	@Override
-	public Object clone() throws CloneNotSupportedException {
-		return super.clone();
+	public Octogon clone() throws CloneNotSupportedException {
+		return (Octogon)super.clone();
 	}
 	
 	@Override
 	public int compareTo(GeometricObject otherObject) {
 		double selfArea = getArea();
 		double otherArea = otherObject.getArea();
+		
 		if (selfArea > otherArea) {
 			return 1;
 		}
@@ -59,5 +60,6 @@ class Octogon extends GeometricObject implements Cloneable, Comparable<Geometric
 		else {
 			return 0;
 		}
+		
 	}
 }
