@@ -9,12 +9,16 @@ class EX13_7i {
 		
 		for (int i = 0; i < 5; i++) {
 			objects[i] = new Triangle(i+1, i+1, i+1);
+			objects[i].setFilled(true);
+			objects[i].setColor("#FFFFFF");
 		}	
 		
 		for (int i = 0; i < 5; i++) {
 			System.out.print("Area : " + objects[i].getArea() + ", ");
 			if (objects[i] instanceof Colorable) {
+				if (objects[i].isFilled() == true && objects[i].getColor() != null) {
 				((Triangle) objects[i]).howToColor();
+				}
 			}
 		}
 	}
