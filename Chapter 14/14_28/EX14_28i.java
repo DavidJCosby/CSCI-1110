@@ -10,16 +10,32 @@ import javafx.geometry.Pos;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.*;
 
 
-class EX14_28i extends Application {
+public class EX14_28i extends Application {
+	
+	private int randomInt(int floor, int ceil) {
+		double seed = Math.random();
+		return (int) (floor + (ceil-floor) * seed + 0.5);
+	}
+	
 	@Override
 	public void start(Stage primaryStage) {
-		BorderPane clock = new BorderPane();
-		Label testLabel = new Label("test");
-		clock.setBottom(testLabel);
-		Scene scene = new Scene(clock, 250, 250);
+		final int WIDTH = 250;
+		final int HEIGHT = 250;
+		
+		ClockPane clock = new ClockPane();
+		clock.setW(WIDTH);
+		clock.setH(HEIGHT);
+		clock.setSecondHandVisible(false);
+		
+		int h = randomInt(0, 11);
+		clock.setHour(h);
+		int m = randomInt(0, 1) * 30;
+		clock.setMinute(m);
+		
+		Scene scene = new Scene(clock, WIDTH, HEIGHT);
 		primaryStage.setScene(scene);
 		primaryStage.setTitle("Modified Clock");
 		primaryStage.show();
