@@ -1,23 +1,27 @@
 /*
 Author: David Cosby
-Date: 01/10/2020
+Date: 01/16/2020
 
-Creates a BallPane and binds keyboard inputs to its movement methods.
+Creates an AnimationPane, uses left and right mouse clicks to toggle between playing and not playing.
 */
 
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
-import javafx.scene.layout.*;
-import javafx.geometry.Pos;
-import javafx.scene.control.*;
-import javafx.scene.input.KeyCode;
+import javafx.scene.input.MouseButton;
 
 
 public class EX_15_Animations_i extends Application {
 		
 	public void start(Stage primaryStage) {
 		AnimationPane animation = new AnimationPane();
+		
+		animation.setOnMouseClicked( e -> {
+			if (e.getButton() != MouseButton.MIDDLE) {
+				animation.togglePlaying();	
+			}
+		});
+		
 		Scene scene = new Scene(animation, 600, 600);
 		primaryStage.setScene(scene);
 		primaryStage.setResizable(false);
@@ -25,7 +29,6 @@ public class EX_15_Animations_i extends Application {
 		primaryStage.show();
 		
 		animation.togglePlaying();
-
 	}
 }
 
