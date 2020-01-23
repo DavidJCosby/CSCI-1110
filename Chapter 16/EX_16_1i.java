@@ -14,8 +14,8 @@ public class EX_16_1i extends Application {
 	public void start(Stage primaryStage) {
 		TextManipulationPane pane = new TextManipulationPane("Programming is fun");
 
-		Scene scene = new Scene(pane);
-		primaryStage.setTitle("Font Demo");
+		Scene scene = new Scene(pane, 475, 180);
+		primaryStage.setTitle("Exercise16_01");
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
