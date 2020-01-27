@@ -10,7 +10,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class EX16_21i extends Application {
-	
 	@Override
 	public void start(Stage primaryStage) {
 		CountdownPane pane = new CountdownPane();		
@@ -18,5 +17,9 @@ public class EX16_21i extends Application {
 		primaryStage.setTitle("Exercise16_21");
 		primaryStage.setScene(scene);
 		primaryStage.show();
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
 	}
 }
