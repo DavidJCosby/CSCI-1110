@@ -36,7 +36,7 @@ class EX_17_3 {
 	}
 	
 	public static void main(String[] args) throws FileNotFoundException, IOException {
-		File file = new File("EX_17_3.txt");
+		File file = new File("EX_17_3.dat");
 		
 		if (!file.exists()) {
 			BinaryIntegerWriter writer = new BinaryIntegerWriter(file);
