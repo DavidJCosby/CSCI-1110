@@ -1,6 +1,6 @@
 /*
 Author: David Cosby
-Date: 02/04/2001
+Date: 02/04/2020
 
 Uses PrintWriter to write 100 random integers to a text file "Exercise17_01.txt" if it does not already exist.
 */

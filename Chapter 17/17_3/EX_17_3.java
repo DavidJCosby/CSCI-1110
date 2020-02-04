@@ -1,6 +1,6 @@
 /*
 Author: David Cosby
-Date: 02/04/2001
+Date: 02/04/2020
 
 Uses DataOutputStream to write 100 random integers to a binary .dat file "Exercise17_03.dat" if it does not already exist. Then reads those integers back from the file and finds the sum of all the integers.
 
