@@ -29,7 +29,7 @@ class EX_17_3 {
 		int sum = 0;
 		
 		for (int i : integers) {
-			sum += 0;
+			sum += i;
 		}
 		
 		return sum;
