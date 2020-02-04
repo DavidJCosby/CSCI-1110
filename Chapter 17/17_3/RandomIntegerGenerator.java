@@ -1,6 +1,6 @@
-class RandomNumberGenerator {
+class RandomIntegerGenerator {
 
-	public RandomNumberGenerator() {
+	public RandomIntegerGenerator() {
 		
 	}	
 
