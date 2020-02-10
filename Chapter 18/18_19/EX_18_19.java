@@ -1,3 +1,10 @@
+/*
+	David Cosby
+	02/10/2020
+	Modified so that the order may be increased by using + and - buttons, rather than a textField.
+*/
+
+
 import javafx.application.Application;
 import javafx.geometry.Point2D;
 import javafx.geometry.Pos;
