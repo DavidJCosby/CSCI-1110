@@ -18,8 +18,8 @@ class EX_17_15 {
 			DataOutputStream output = new DataOutputStream(new FileOutputStream(to));
 		) {
 			while (input.available() > 0) {
-				output.writeByte(input.readByte());
-				input.skip(insertLengthInBytes);
+				byte byteFromFile = input.readByte();
+				output.writeByte(byteFromFile - 5);
 			}
 			System.out.println("Done.");
 		}

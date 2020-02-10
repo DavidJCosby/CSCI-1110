@@ -21,8 +21,8 @@ import java.util.ArrayList;
 
 public class Exercise17_07 {
     
-    public static ArrayList<Loan> fetchLoans(String fileName) {
-        ArrayList<Loan> loans = new ArrayList<Loan>();
+    public static void outputData(String fileName) {
+        int total = 0;
         
         try (
             ObjectInputStream input = new ObjectInputStream(new FileInputStream(fileName));
@@ -31,7 +31,8 @@ public class Exercise17_07 {
             
             while (proceed) {
                 try {
-                    loans.add((Loan)input.readObject());
+                    Loan loanFromFile = (Loan)input.readObject();
+                    total += loanFromFile.getLoanAmount();
                 }
                 catch (EOFException e1) {
                     proceed = false;
@@ -47,7 +48,8 @@ public class Exercise17_07 {
             System.out.println("File could not be opened");
         }
         
-        return loans;
+        System.out.println("Total loan amount: " + total);
+
     }
     
     public static void main(String[] args) throws FileNotFoundException {
@@ -64,13 +66,6 @@ public class Exercise17_07 {
             System.out.println("File could not be opened");
         }
         
-        ArrayList<Loan> loans = fetchLoans("Exercise17_07.dat");
-        
-        int total = 0;
-        for (Loan loan : loans) {
-            total += loan.getLoanAmount();
-        }
-        
-        System.out.println("Total loan amount: " + total);
+        outputData("Exercise17_07.dat");
     }
 }
